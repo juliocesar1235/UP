@@ -19,102 +19,20 @@
 
   <link rel="icon" href="img/up-icon.png"/>
   <link href="css/main.css" rel="stylesheet">
+  <%= stylesheet_link_tag "index"%>
   <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- INTRO PAGE -->
-<div class="fullpage-1" id="firstpage">
-<h1 class="animation-opacity">What...</h1>
-<div id="center-img" class="animation-opacity">
-  <figure>
-<figcaption class="alpha">Pre-Alpha</figcaption>
+<%= render partial: "welcome/landing_view" %>
 
-<svg id="UPlogoSVG" itemprop="logo" xmlns="http://www.w3.org/2000/svg" width="331.51" height="250.44" >
-  <desc>Up logo cambiando color</desc>
-  <circle cx="18.39" cy="18.24" r="18.07"/>
-  <circle cx="132.54" cy="18.07" r="18.07"/>
-  <path d="M187.49,243V50.28H280.1s51.41.56,51.41,54.82-50.84,56.29-50.84,56.29h-32l.45-22H263.8l11.24-.1C286.73,138,305,131.91,305,106c0-38.13-39.49-33.36-39.49-33.36H213.7V242.88Z"/>
-  <path d="M59.36,50,44,73.36l-18.24.11v93.3c0,44.18,19.6,62.9,45.93,62.9,29.26,0,48-19.31,48-62.9V50.05h25.74V165c0,60.55-31.89,85.42-74.6,85.42C30.42,250.44,0,227.33,0,166.19V50.05Z"/>
-</svg>
-
-</figure>
-</div>
-<div id="copyright" class="animation-opacity">
-<h3>Copyright 2019<br itemprop="email">what@ÜP.com</h3>
-</div>
-</div>
-
-<!-- NAV -->
-<div id="navbar">
-<ul>
-  <li class="nav-left"><a href="#home" id="navspace"><img src="img/LogoV2-white.svg" alt="UP Icon"></a></li>
-  <li class="nav-left"><a href="#how">EMPIEZA!</a></li>
-  <li class="nav-left"><a href="/Catalogo.html"><strong>Catalogo</strong></a></li>
-  <li class="nav-right"><a href="#Login"><img src="img/icons/user.svg" class="icon-small"> Login</a></li>
-  <li class="nav-right"><a class="active" href="#Cart"><img src="img/icons/cart-cross.svg" class="icon-small"> Cart</a></li>
-</ul>
-</div>
-<!-- END NAV -->
+<%= render partial: "welcome/navigation" %>
 
   <center>
-  <h1 class="FlyMe">Pronto...</h1>
-  <br>
-
-
-  <!-- 4 RECUADROS EN BOLD Y DESCRIPCIÓN -->
-    <div class="container mb-5">
-      <div class="row text-center">
-        <div class="col mb-3"> <img class="mb-3 x64" src="img/icons/cut-cash.svg" alt="Imagen de gastar menos">
-        <h5 class="mt-0 mb-1">NO COMPRES</h5>Pontelo
-        </div>
-        <div class="col mb-3">  <img class="mb-3 x64 animation-spin" src="img/icons/loading.svg" alt="Reloj de arena">
-        <h5 class="mt-0 mb-1">NO PIERDAS TIEMPO</h5>Tenlo a domicilio
-        </div>
-        <div class="w-100"></div>
-        <div class="col mb-3">  <img class="mb-3 x64" src="img/icons/no-clean.svg" alt="No limpies ni planches">
-        <h5 class="mt-0 mb-1">NO PLANCHES O LIMPIES</h5>Listo para usar
-        </div>
-        <div class="col mb-3">  <img class="mb-3 x64" src="img/icons/armario.svg" alt="Generic image">
-        <h5 class="mt-0 mb-1">NO TE LIMITES</h5>Todo un armario listo para ti</h5>
-        </div>
-      </div>
-    </div>
+  <%= render partial: "welcome/up" %>
 
 <!-- Flags List -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-      <img src="img\flags\Argentina.svg" class="image-mid" alt="Argentina-Flag">
-      <h2>ARGENTINA</h2>
-      </div>
-      <div class="col-sm">
-      <img src="img\flags\Brazil.svg" class="image-mid" alt="Brazil-Flag">
-      <h2>BRAZIL</h2>
-      </div>
-      <div class="col-sm">
-      <img src="img\flags\Canada.svg" class="image-mid" alt="Canada-Flag">
-      <h2>CANADA</h2>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-        <img src="img\flags\Japan.svg" class="image-mid" alt="Japan-Flag">
-        <h2>JAPAN</h2>
-        </div>
-        <div class="col-sm">
-        <img src="img\flags\Mexico.svg" class="image-mid" alt="Mexico-Flag">
-        <h2>MEXICO</h2>
-        </div>
-        <div class="col-sm">
-        <img src="img\flags\USA.svg" class="image-mid" alt="USA-Flag">
-        <h2>USA</h2>
-      </div>
-    </div>
-  </div>
-  <br>
-<!-- END FLAG LISTS -->
-
   <!--START Mailchimp-->
   <a href="http://eepurl.com/grVgP1" target="_blank">
   <div class="btn-group" role="group" aria-label="Third group">
@@ -123,32 +41,11 @@
   <!--END Mailchimp-->
 
   </center>
-
-  <!-- Footer -->
-<footer class="page-footer up-blue pt-4 text-white">
-<div class="container">
-
-    <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-      <li class="list-inline-item">
-        <a href="https://www.instagram.com/up.site/" target="_blank"><img src="img/Logo-Instagram.svg" class="icon-mid" alt="InstagramLogo"></a>
-        <a href="http://m.me/TheUPsite/?ref=UPHomePage" target="_blank"><img src="img/Logo-Facebook.svg" class="icon-mid" alt="FacebookLogo"></a>
-      </li><br><br>
-      <li class="list-inline-item">
-        <a href="http://eepurl.com/grVgP1" target="_blank" class="btn bg-light">Se un Alpha!</a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-copyright text-center py-3">Copyright © <span itemprop="foundingDate">2019</span>, ÜP.com y afiliados.<br>
-  <a href="mailto:contact@üp.com" itemprop="email"> what@üp.com</a>
-</div>
-</footer>
+<!--Footer-->
+<%= render partial: "welcome/footer" %>
 
 <!-- SCRIPTS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142285047-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)} gtag('js',new Date());gtag('config','UA-142285047-1');</script>
-
-
 </body>
 </html>
-
 <!-- CopyRight @ ÜP 2019. All rights reserved. *LCAM* -->
