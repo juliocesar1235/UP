@@ -20,17 +20,17 @@
   <link rel="icon" href="img/up-icon.png"/>
   <link href="css/main.css" rel="stylesheet">
   <%= stylesheet_link_tag "index"%>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag "bootstrap.min"%>
 </head>
 <body>
 
   <!-- INTRO PAGE -->
-<%= render partial: "welcome/landing_view" %>
+<%= render partial: "landing/landing_view" %>
 
-<%= render partial: "welcome/navigation" %>
+<%= render partial: "landing/navigation_bar" %>
 
   <center>
-  <%= render partial: "welcome/up" %>
+  <%= render partial: "landing/up" %>
 
 <!-- Flags List -->
   <!--START Mailchimp-->
@@ -42,7 +42,7 @@
 
   </center>
 <!--Footer-->
-<%= render partial: "welcome/footer" %>
+<%= render partial: "landing/footer" %>
 
 <!-- SCRIPTS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142285047-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)} gtag('js',new Date());gtag('config','UA-142285047-1');</script>

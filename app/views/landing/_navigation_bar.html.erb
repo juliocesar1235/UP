@@ -1,0 +1,15 @@
+<!-- NAV -->
+<div id="navbar" class="sticky">
+<ul>
+  <li class="nav-left">
+    <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+  </li>
+  <li class="nav-left">
+    <%= link_to 'Catalogo', catalog_index_path, class: 'navbar-brand' %>
+  </li>
+  <li class="nav-right">
+    <%= link_to "Login", login_index_path, class: 'navbar-brand' %>
+  </li>
+  <li class="nav-right"><a class="active" href="#Cart"><img src="img/icons/cart-cross.svg" class="icon-small"> Cart</a></li>
+</ul>
+</div>
