@@ -47,6 +47,7 @@ GEM
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
+    bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
@@ -144,6 +145,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rb-readline (0.5.5)
     regexp_parser (1.6.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
@@ -215,6 +217,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -226,6 +229,7 @@ DEPENDENCIES
   pg
   puma (~> 3.11)
   rails (~> 5.2.3)
+  rb-readline
   rspec-rails
   sass-rails (~> 5.0)
   selenium-webdriver
