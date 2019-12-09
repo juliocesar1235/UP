@@ -1,9 +1,7 @@
 # README
+## Setup 
 
+### MacOS
 
-##Setup 
-
-###MacOS
-
-###Windows
+### Windows
 
