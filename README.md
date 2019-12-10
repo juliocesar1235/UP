@@ -1,5 +1,4 @@
-# README
-## Setup 
+# Setup
 
 ### MacOS
 
