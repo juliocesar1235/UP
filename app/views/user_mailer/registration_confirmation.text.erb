@@ -1,0 +1,5 @@
+Hola <%= @user.name %>,
+
+Gracias por registrarte a up.com! Para confirmar tu registro da click en el link de abajo!.
+
+<%= confirm_email_user_url(@user.confirm_token) %>

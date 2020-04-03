@@ -26,14 +26,13 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
+    if @user.save
+      UserMailer.registration_confirmation(@user).deliver
+      flash[:success] = "Please confirm your email address to continue"
+      redirect_to root_url
+    else
+      flash[:error] = "Ooooppss, algo salio mal, ya lo estamos investigando!"
+      render 'new'
     end
   end
 
@@ -58,6 +57,18 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def confirm_email
+    user = User.find_by_confirm_token(params[:id])
+    if user
+      user.email_activate
+      flash[:success] = "Bienvenido a üp.com, tu cuenta ha sido verificada."
+      redirect_to signin_url
+    else
+      flash[:error] = "Lo sentimos. Este usuario no existe"
+      redirect_to root_url
     end
   end
 
