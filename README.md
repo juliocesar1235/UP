@@ -1,9 +1,9 @@
 # Up.com
+Brindamos una solución digital para conectar boutiques de Monterrey con clientes por internet 
 
-## Setup
-
+# Setup
 ## MacOS
-
+**Coming soon**
 
 ## Windows
 
