@@ -1,4 +1,6 @@
-# Setup
+# Up.com
+
+## Setup
 
 ## MacOS
 
