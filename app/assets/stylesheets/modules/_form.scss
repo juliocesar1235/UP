@@ -1,0 +1,26 @@
+.form {
+  display: block;
+  padding: 1em 2em;
+  box-shadow: 0.25em 0.25em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.25em;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    label {
+      font-size: 0.75em;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+    }
+
+    input,
+    textarea {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border: 0;
+      border-bottom: 1px solid var(--neutral_light);
+    }
+  }
+}
