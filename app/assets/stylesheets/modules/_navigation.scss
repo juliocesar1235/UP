@@ -1,0 +1,40 @@
+.navigation {
+
+  &__container {
+    background-color: var(--secondary);
+    color: white;
+    height: 3em;
+  }
+
+  &__menu {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+
+    li {
+      list-style: none;
+      margin-right: 1em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 0 1em;
+
+      @include respond-to('l'){
+        padding: 0;
+      }
+    }
+  }
+
+  &__brand {
+    // TODO: Replace this for svg
+    font-weight: 700;
+  }
+}
