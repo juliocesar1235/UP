@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ÜP | Catalogo de Boutiques de Monterrey</title>
-    <meta name="description" content="El catalogo de boutiques más grande de Monterrey en Internet. Encuentra el vestido de noche a tu alcance.">
-    <meta name="keywords" content="Rentar ropa, Boutiques, Monterrey"/>
-    <meta name="reply-to" content="contact@xn--p-dha.com">
-    <%= favicon_link_tag asset_path('up-icon.png') %>
 
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
+  <title>ÜP | Catalogo de Boutiques de Monterrey</title>
+  <meta name="description"
+    content="El catalogo de boutiques más grande de Monterrey en Internet. Encuentra el vestido de noche a tu alcance.">
+  <meta name="keywords" content="Rentar ropa, Boutiques, Monterrey" />
+  <meta name="reply-to" content="contact@xn--p-dha.com">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_pack_tag 'application' %>
+  <%= stylesheet_pack_tag 'application' %>
+  <%= favicon_pack_tag 'up-icon.png' %>
 </head>
 
 <body>
