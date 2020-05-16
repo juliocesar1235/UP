@@ -46,6 +46,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use inline svg
 gem 'inline_svg'
 
+# Use webpacker
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'factory_bot_rails'
