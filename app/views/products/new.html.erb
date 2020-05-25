@@ -13,19 +13,20 @@
 </div>
 
 <div class="form__field">
-  <%= form.label :img_path%>
-  <%= form.text_field :img_path%>
+  <%= form.label :alt_img%>
+  <%= form.text_field :alt_img%>
 </div>
 
 <div class="form__field">
-  <%= form.label :alt_img%>
-  <%= form.text_field :alt_img%>
+  <%= form.label :thumbnail%>
+  <%= form.file_field :thumbnail, multiple: false, direct_upload: false %>
 </div>
 
 <div class="form__field">
   <%= form.label :price%>
   <%= form.text_field :price%>
 </div>
+
 
 <%= form.submit 'Add product', :class => 'button'%>
 <%end%>
