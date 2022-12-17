@@ -12,6 +12,6 @@
   "version": "0.1.0",
   "devDependencies": {
     "postcss-scss": "^2.0.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.3"
   }
 }
